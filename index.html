@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SAYED MO</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <style>
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-transform: capitalize;
+}
+body{
+    font-family: "Quicksand", sans-serif;
+    background-color: rebeccapurple;
+    color: #fff;
+    min-height: 100vh;
+}
+body,html{
+    height: 100%;
+}
+a{
+    text-decoration: none;
+    color: #fff;
+}
+:root{
+    --One-color:#16db58;
+    --One-background:#16db58;
+    --transition: all 0.2s linear;
+}
+::selection{
+    color: var(--One-color) ;
+    background-color: #fff;
+    padding: 5px 10px 
+}
+nav{
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    padding: 40px 30px;
+    align-items: center;
+    position:fixed;
+    width: 100%;
+    top: 0;
+    height: 80px;
+}
+nav > a{
+    color: var(--One-color);
+    text-transform: uppercase;
+    font-size: 35px;
+    font-weight: bold;
+}
+nav ul{
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+nav ul li a{
+    font-size: 20px;
+    font-weight: 500;
+    padding-bottom: 2px;
+    transition: var(--transition);
+}
+nav ul li a:hover{
+    border-bottom: solid var(--One-color);
+    color: var(--One-color);
+}
+nav > div , .menu{
+    display: none;
+}
+div.home{
+    min-height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 120px;
+    align-items: center;
+    width: 100%;
+    padding-top: 80px;
+}
+div.home div:first-child{
+    width: 60%;
+}
+div.home div:first-child p:first-child{
+    color: #fff;
+    font-size: 35px;
+    font-weight: bold;
+}
+div.home div:first-child h1{
+    color: #fff;
+    font-size: 50px;
+    font-weight: bold;
+}
+div.home div:first-child .i{
+    color: #fff;
+    font-size: 30px;
+    font-weight: 700;
+}
+div.home div:first-child .i span{
+    color: var(--One-color);
+    font-weight: bold;
+}
+div.home div:first-child .an{
+    color: #fff;
+    font-size: 25px;
+    margin: 10px 0px 0px;
+    font-weight: bold;
+}
+div.home div:first-child div{
+    display: flex;
+    gap: 15px;
+    margin:30px 0px;
+}
+div.home div:first-child div i{
+    font-size: 25px;
+    border: solid;
+    color: var(--One-color);
+    border-radius: 50%;
+    padding: 10px;
+    box-shadow: 0px 0px 3px 1px inset;
+    transition: all 0.2s linear;
+}
+div.home div:first-child div i:hover{
+    transform: scale(1.2);
+    box-shadow: 0px 0px 6px 2px var(--One-color);
+}
+div.home div:first-child button{
+    border: none;
+    outline: none;
+    background-color: var(--One-color);
+    font-size: 20px;
+    padding: 10px 30px;
+    color: #fff;
+    box-shadow: 0px 0px 10px 4px var(--One-color);
+    border-radius: 30px;
+    font-weight: bold;
+    transition: all 0.2s linear;
+}
+div.home div:first-child button:hover{
+    transform: scale(1.05);
+    background-color: transparent;
+    box-shadow: 0px 0px 20px 8px var(--One-color) inset;
+}
+div.home div:last-child{
+    width: 30%;
+}
+div.home div:last-child img{
+    width: 100%;
+    border-radius: 50%;
+    box-shadow: 0px 0px 10px 20px var(--One-color);
+    padding: 5px;
+}
+div.home div:last-child img:hover{
+    box-shadow: 0px 0px 10px 20px var(--One-color) inset;
+    transform: scale(1.1);
+}
+@media (max-width:767px) {
+    nav ul{
+        display: none;
+   }
+    div.home{
+        min-height: 100vh;
+        display: flex;
+        justify-content: center;
+        padding: 0px 20px;
+        align-items: center;
+        flex-direction: column-reverse;
+        padding-top: 60px;
+   }
+    div.home div:first-child{
+        width: 100%;
+   }
+    div.home div:first-child p:first-child{
+        font-size: 25px;
+        margin-bottom: 5px;
+   }
+    div.home div:first-child h1{
+        font-size: 35px;
+   }
+    div.home div:first-child .i{
+        font-size: 23px;
+        margin-top: 10px;
+        font-weight: 700;
+   }
+    div.home div:first-child .an{
+        font-size: 20px;
+   }
+    div.home div:first-child div{
+        display: flex;
+        margin:30px auto;
+        width: 80%;
+        justify-content: space-between;
+   }
+    main div.home div:first-child div i{
+        font-size: 20px;
+   }
+    div.home div:first-child button{
+        padding: 10px 0px;
+        width: 80%;
+        margin:0px auto;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+   }
+    div.home div:last-child{
+        width: 100%;
+        text-align: center;
+        margin: 40px 0px;
+   }
+    div.home div:last-child img{
+        width: 70%;
+        box-shadow: 0px 0px 10px 10px var(--One-color);
+   }
+}
+@media (min-width:768px) and (max-width:1199px) {
+    div.home{
+        min-height: 100vh;
+        padding: 0px 40px;
+        align-items: center;
+        width: 100%;
+        padding-top: 80px;
+   }
+    div.home div:first-child{
+        width: 40%;
+   }
+    main div.home div:first-child p:first-child{
+        font-size: 30px;
+   }
+    main div.home div:first-child h1{
+        color: #fff;
+        font-size: 40px;
+        white-space: nowrap;
+   }
+    div.home div:first-child .i{
+        font-size: 25px;
+        white-space: nowrap;
+        margin-top: 5px;
+   }
+    div.home div:first-child .an{
+        font-size: 23px;
+   }
+    div.home div:first-child div{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        gap: 0px;
+   }
+    div.home div:first-child button{
+        background-color: var(--One-color);
+        width: 100%;
+   }
+    div.home div:last-child{
+        width: 40%;
+        height: 50%;
+   }
+    div.home div:last-child img{
+        border-radius: 5%;
+        box-shadow: 0px 0px 10px 10px var(--One-color);
+        height: 100%;
+   }
+}
+#set{
+    top:10%;
+    left:0%;
+    width:200px;
+    position:fixed;
+}
+#set i{
+    background-color:#16db58;
+    padding:5px;
+    font-size:25px;
+    border-radius:0px 5px 5px 0px;
+    color:#fff;
+    opacity:0.5;
+}
+.menu-content{
+    background-color: rebeccapurple;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    padding:10px;
+    display: none;
+    border-radius:0px 10px 10px 0px;
+    border: solid var(--One-color) 3px;
+}
+.menu-content > p{
+    color: var(--One-color);
+    font-size: 20px;
+    font-weight: bold;
+    border-bottom: solid var(--One-color);
+    padding-bottom: 4px;
+    margin-bottom: 5px;
+}
+.back{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 5px;
+}
+.back div{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: solid white;
+}
+.menu-content #reset{
+    background-color: #16db58;
+    padding: 5px;
+    color: rebeccapurple;
+    font-weight: 700;
+    border-radius: 5px;
+    text-align: center;
+    margin: 5px 0px;
+}
+    </style>
+</head>
+<body>
+    <nav>
+      <a href="">sayed mo</a>
+      <ul>
+        <li>
+          <a href="#about">About</a>
+        </li>
+        <li>
+          <a href="">Portfolio</a>
+        </li>
+        <li>
+          <a href="">Skills</a>
+        </li>
+        <li>
+          <a href="">Gallery</a>
+        </li>
+        <li>
+          <a href="">Games</a>
+        </li>
+        <li>
+          <a href="">Contact Me</a>
+        </li>
+      </ul>
+      <div class="btn">
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+    </nav>
+    <div class="home">
+      <div>
+        <p>hello, i am</p>
+        <h1>sayed mohamed</h1>
+        <p class="i">i am <span id="writ">front end developer</span>
+        </p>
+        <p class="an">welcome to my personal website, contact me is you have any questions, thank you.</p>
+        <div>
+          <i class="fab fa-facebook"></i>
+          <i class="fab fa-instagram"></i>
+          <i class="fab fa-tiktok"></i>
+          <i class="fab fa-linkedin"></i>
+          <i class="fab fa-github"></i>
+        </div>
+        <button>download cV</button>
+      </div>
+      <div>
+        <img src="img.jpg" alt="MyImg">
+      </div>
+    </div>
+    <div id="set">
+      <i class="fa-solid fa-gear" id="icon"></i>
+      <div class="menu-content">
+        <p>Setting</p>
+        <div>
+          <p class="bc">Color</p>
+          <div class="back">
+            <div style="background-color: #16db58;" onclick="green()"></div>
+            <div style="background-color: #ff3c3c;" onclick="gray()"></div>
+            <div style="background-color: rgb(99, 235, 201);;" onclick="bre()"></div>
+            <div style="background-color: rebeccapurple" onclick="re()"></div>
+          </div>
+        </div>
+        <div>
+          <p>Background Color</p>
+          <div class="back">
+            <div style="background-color: #16db58;" onclick="bgreen()"></div>
+            <div style="background-color: #ff3c3c;" onclick="bgray()"></div>
+            <div style="background-color: rgb(99, 235, 201);" onclick="breb()"></div>
+            <div style="background-color: rebeccapurple;" onclick="bre()"></div>
+          </div>
+        </div>
+        <div id="reset" onclick="reset()">reset</div>
+      </div>
+    </div>
+    </div>
+    <script>
+            document.querySelector('#set').addEventListener('click', function() {
+        const menu = document.querySelector('.menu-content');
+        menu.style.display = menu.style.display === 'block' ? 'none' : 'block';
+        if(menu.style.display === 'block'){
+        	document.querySelector('#icon').style.opacity = '1'
+        } else{
+        	document.querySelector('#icon').style.opacity = '0.5'
+        }
+    });
+
+    function reb() {
+        document.documentElement.style.setProperty('--One-color', 'rgb(99, 235, 201)')
+    }
+
+    function gray() {
+        document.documentElement.style.setProperty('--One-color', '#ff3c3c')
+    }
+
+    function green() {
+        document.documentElement.style.setProperty('--One-color', '#16db58')
+    }
+
+    function re() {
+        document.documentElement.style.setProperty('--One-color', 'rebeccapurple')
+    }
+
+    function breb() {
+        document.body.style.backgroundColor = 'rgb(99, 235, 201)'
+    }
+
+    function bgray() {
+        document.body.style.backgroundColor = '#ff3c3c'
+    }
+
+    function bgreen() {
+        document.body.style.backgroundColor = '#16db58'
+    }
+
+    function bre() {
+        document.body.style.backgroundColor = 'rebeccapurple'
+    }
+
+
+
+    var menuContent = document.querySelector('.menu-content');
+
+    if (menuContent && window.getComputedStyle(menuContent).display === "block") {
+        document.getElementById('icon').style.cssText = "opacity:1; transform: rotate(360deg);";
+    } else {
+        document.getElementById('icon').style.cssText = "opacity:0.5; transform: rotate(0deg);";
+    }
+
+    function reset() {
+        document.body.style.backgroundColor = 'rebeccapurple'
+        document.documentElement.style.setProperty('--One-color', '#16db58')
+    }
+
+
+    const phrases = [
+        "Front End Developer",
+        "Designer",
+        ""
+    ];
+
+    const element = document.getElementById('writ');
+    const typingSpeed = 100;
+    const deletingSpeed = 50;
+    const pauseTime = 1000;
+
+    let phraseIndex = 0;
+    let charIndex = 0;
+    let isDeleting = false;
+
+    function typeWriter() {
+        if (isDeleting) {
+            element.innerHTML = phrases[phraseIndex].substring(0, charIndex - 1);
+            charIndex--;
+            if (charIndex === 0) {
+                isDeleting = false;
+                phraseIndex = (phraseIndex + 1) % phrases.length;
+                setTimeout(typeWriter, pauseTime);
+            } else {
+                setTimeout(typeWriter, deletingSpeed);
+            }
+        } else {
+            element.innerHTML = phrases[phraseIndex].substring(0, charIndex + 1);
+            charIndex++;
+            if (charIndex === phrases[phraseIndex].length) {
+                setTimeout(function() {
+                    isDeleting = true;
+                    setTimeout(typeWriter, pauseTime);
+                }, pauseTime);
+            } else {
+                setTimeout(typeWriter, typingSpeed);
+            }
+        }
+    }
+    window.onload = typeWriter;
+    </script>
+</body>
+</html>
